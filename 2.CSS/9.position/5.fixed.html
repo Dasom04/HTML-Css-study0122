@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+
+
+     body {
+      height: 2000px;
+     }
+
+
+    .grandparent {
+      width: 400px;
+      height: 300px;
+      padding: 100px;
+      border: 4px dashed gray;
+      position: relative;
+      
+    }
+   .parent {
+      width: 300px;
+      height: 300px;
+      border: 4px dashed lightgrey;
+      position: absolute;
+      left: 100px;
+      top: 200px;
+   }
+
+   .child {
+    width: 120px;
+    height: 80px;
+    border: 3px dotted red;
+    background: tomato;
+    border-radius: 10px;
+    font-size: 30px;
+   }
+.fixed {
+position: fixed;
+right: 10px;
+bottom: 50px;
+}
+/* fixed는 항상 화면을 기준으로 고정됨 부모요소에 psition있어도 화면 기준임 */
+
+
+  </style>
+
+<body>
+  
+  <div class="grandparent">
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child fixed">2</div>
+      <div class="child">3</div>
+    </div>
+  </div>
+
+</body>
+</html>

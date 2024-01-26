@@ -1,0 +1,75 @@
+@import url(../../common.css);
+
+/* 모든 페이지에 적용될 태그같은걸 여기에 만들고 링크 첨부하면 동일하게 적용 가능 */
+
+  /* body {
+  width: 900px;
+  height: 600px;
+  background: gray;
+}  */
+
+#wrapper {
+width: 600px;
+height: 600px;
+background: darkgray;
+}
+
+strong {
+color: white;
+font-size: 50px;
+font-weight: bold;
+
+}
+
+h1 {
+width: 600px;
+height: 20%;
+color: rgb(179, 179, 57);
+background: rgb(28, 60, 82);
+font-size: 20px;
+font-weight: bold;
+padding: 20px;
+text-align: center;
+
+}
+
+span {
+font-size: 30px;
+font-weight: bold;
+}
+
+em {
+  font-size: 38px;
+  color: lightgrey;
+  font-weight: bold;
+}
+
+.content {
+  width: 400;
+  background: white;
+  float: right;
+
+}
+h2 {
+  width: 80%;
+  height: px;
+  color: yellow;
+  font-size: 20px;
+  font-family: '궁서', sans-serif;
+  font-weight: bold;
+  background: darkred;
+  padding: 10px;
+  float: right;
+}
+/* .hodo {
+  width: 80%;
+  font-size: 15px;
+
+} */
+.menu {
+  width: 10%;
+  height: 100%;
+  text-decoration: underline;
+
+}
+

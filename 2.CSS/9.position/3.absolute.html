@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    .grandparent {
+      width: 400px;
+      height: 300px;
+      padding: 100px;
+      border: 4px dashed gray;
+      position: relative;
+      
+    }
+   .parent {
+      width: 300px;
+      height: 300px;
+      border: 4px dashed lightgrey;
+      position: absolute;
+      left: 100px;
+      top: 200px;
+   }
+
+   .child {
+    width: 120px;
+    height: 80px;
+    border: 3px dotted red;
+    background: tomato;
+    border-radius: 10px;
+    font-size: 30px;
+   }
+.absolute {
+  position: absolute;
+  right: 100px;
+  bottom: 150px;
+}
+/* 부모요소에 relativ 주면 부모기준으로 움직이지만 부모요소에 주지 않으면
+   화면 기준으로 움직임 */
+/* - relativ 자기자리 무시안됨, 자기 자리 기준으로 이동 원래 있던곳에서 이동시키고싶으면
+   - absolute 부모중 포지션이 있으면 그 기준으로 부모가 포지션이 없으면 모니터 화면 기준으로
+               부모 기준으로 이동시키고싶으면*/
+  </style>
+
+<body>
+  
+  <div class="grandparent">
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child absolute">2</div>
+      <div class="child">3</div>
+    </div>
+  </div>
+
+</body>
+</html>
