@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+
+  .container{
+    width: 700px;
+    padding: 20px;
+    border: 3px solid red;
+    /* overflow: hidden; */
+
+  }
+/* overflow를 clear해제용으로 쓰면 안됨 */
+  .box {
+    width: 200px;
+    height: 150px;
+    border: 3px solid green;
+    background: yellow;
+    font-size: 50px;
+    float: left;
+  }
+
+  .clear-box {
+    clear: both;
+  }
+  .clearfix::after {
+    content: '';
+    display:  block;
+    clear: both;
+  }
+
+/*     content: '';
+display:  block;
+clear: both;
+  정석 코드 (부모안에 넣어주기) */
+
+
+</style>
+
+</head>
+<body>
+  
+
+  <div class="container clearfix">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <!-- <div class="clear-box"></div> -->
+  </div>
+  
+  
+</body>
+</html>
